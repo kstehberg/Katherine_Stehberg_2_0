@@ -1,0 +1,46 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #343a40; /* Dark color for the navbar */
+}
+
+.navbar-brand {
+    color: #ffffff; /* White color for the brand */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White color for the links */
+}
+
+.bg-body-tertiary {
+    background-color: #f8f9fa; /* Light gray background color */
+}
+
+h1 {
+    color: #343a40; /* Dark color for headings */
+    margin-top: 20px;
+}
+
+p {
+    color: #555555; /* Text color */
+}
+
+.bg-danger {
+    background-color: #dc3545; /* Red background color for the footer */
+    color: #ffffff; /* White text color for the footer */
+    padding: 10px;
+    text-align: center;
+}
