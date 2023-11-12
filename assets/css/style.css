@@ -1,10 +1,12 @@
-/* style.css */
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -14,33 +16,29 @@ body {
 }
 
 .navbar {
-    background-color: #343a40; /* Dark color for the navbar */
+    background-color: #343a40;
 }
 
-.navbar-brand {
-    color: #ffffff; /* White color for the brand */
-}
-
-.navbar-nav .nav-link {
-    color: #ffffff; /* White color for the links */
+.navbar-brand, .nav-link {
+    color: #ffffff;
 }
 
 .bg-body-tertiary {
-    background-color: #f8f9fa; /* Light gray background color */
+    background-color: #f8f9fa;
 }
 
 h1 {
-    color: #343a40; /* Dark color for headings */
+    color: #343a40;
     margin-top: 20px;
 }
 
 p {
-    color: #555555; /* Text color */
+    color: #555555;
 }
 
 .bg-danger {
-    background-color: #dc3545; /* Red background color for the footer */
-    color: #ffffff; /* White text color for the footer */
+    background-color: #dc3545;
+    color: #ffffff;
     padding: 10px;
     text-align: center;
 }
