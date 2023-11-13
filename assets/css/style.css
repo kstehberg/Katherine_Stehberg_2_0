@@ -1,44 +1,101 @@
 /* Reset some default styles for better consistency */
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .navbar {
-    background-color: #343a40;
+  background-color: #ededed;
 }
 
-.navbar-brand, .nav-link {
-    color: #ffffff;
+.navbar-brand,
+.nav-link {
+  color: #343a40;
+}
+
+.navbar-brand:hover {
+  color: #dc3545;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .bg-body-tertiary {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 h1 {
-    color: #343a40;
-    margin-top: 20px;
+  color: #343a40;
+  margin-top: 20px;
 }
 
 p {
-    color: #555555;
+  color: #555555;
+}
+
+.card {
+  border: none;
+}
+.card-body {
+  & img {
+    border-radius: 50%;
+  }
 }
 
 .bg-danger {
-    background-color: #dc3545;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.container-beneficios {
+  border: 2px solid #ededed;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #ededed;
+  height: 60px;
+  padding: 10px;
+  & p {
+    color: #343a40;
+    font-weight: 600;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.2s ease;
+    }
+    & a {
+      text-decoration: none;
+      color: #343a40;
+    }
+  }
+  & span {
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    height: 80px;
+  }
 }
